@@ -29,7 +29,9 @@ ul, ol{
 
 header{
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    min-width: 1050px;
 }
+
 
 .caixa{
     position: relative;
@@ -59,8 +61,8 @@ nav li:hover{
 
 .produtos{
     width: 940px;
-    margin: 0 auto;
-    padding: 100px 0;
+    margin: auto;
+    padding: 100px;
 }
 
 .produtos li {
@@ -68,7 +70,7 @@ nav li:hover{
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 4px  1.5%;
+    margin: 0 7px  1.5%;
     padding: 20px;
     box-sizing: border-box;
     border: 2px solid #484848;
@@ -107,7 +109,7 @@ footer{
     margin-top: auto;
     bottom: 0px;
     width: 100%;
-
+    min-width: 1050px;
 }
 
 footer a .insta{
