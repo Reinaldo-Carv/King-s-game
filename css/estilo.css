@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+} /* zerando a pagina, o asteristico significa "Tudo", ou seja a pagina inteira */
+
+@font-face {
+    font-family: "minha fonte";
+    src: url(../fontes/FiraSans-Bold.ttf); /* os dois pontos representa que voltou uma pasta */
+}
+
+@font-face {
+    font-family: "outra fonte" ;
+    src: url(../fontes/Montserrat-Light.ttf);
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul, ol{ 
+    list-style: none;
+}
+
+header{
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto; 
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    font-family:"minha fonte";
+    display: inline ;
+    font-size: 20px;
+    margin: 0 0 0 30px;
+    color: rgb(213, 213, 213);
+}
+
+nav li:hover{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 4px  1.5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #484848;
+    border-radius: 10px;
+    height: 330px;
+    box-shadow: 5px 10px #888888;
+}
+
+.p1{
+    font-family: "minha fonte";
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.p2{
+    font-family: "outra fonte";
+    font-size: 14px;
+    color: #06C;
+    cursor: pointer;
+}
+
+.produtos li:hover .p1{
+    font-size: 21px;
+}
+
+.produtos li:hover{
+    border-color:  #06C;
+}
+
+footer{
+    font-family: "outra fonte";
+    text-align: center;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    padding: 20px 0;
+    height: auto;
+    margin-top: auto;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+footer a .insta{
+    margin-top: 10px;
+}
+
+.rodape {
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.caixa_detalhes{
+    position: relative;
+    width: 940px;
+    margin: 2% auto; /*centralizado*/
+    padding:50px;
+}
+
+.caixa_detalhes .miniaturas li{
+    display:inline-block;
+    vertical-align: top;
+    margin: 2px;
+    padding: 5px 5px;
+    border: 1px solid #484848;
+    border-radius: 4px;
+}
+
+.caixa_detalhes .miniaturas li:hover{
+    border-color: #06c;
+}
+
+.descricao_detalhes{
+    position: absolute;
+    top: 30px;
+    left:400px;
+    padding: 10px;
+    width: 500px;
+    height: 410px;
+    text-align: center;
+}
+
+.texto_principal{
+    font-family: "minha fonte";
+    font-size: 40px;
+    margin: 0 0 0 30px;
+    color:black;
+    width: 500px;
+    
+}
+
+.imagem_miniatura{
+    width:50px;
+    height: 50px;
+}
+
+.espec{
+    list-style-type: disc;
+    width: 500px;
+}
+
+.texto_secundario{
+    font-family:"outra fonte";
+    font-size: 30px;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.texto_secundario ul li{
+    font-family:"outra fonte";
+    font-size: 15px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
