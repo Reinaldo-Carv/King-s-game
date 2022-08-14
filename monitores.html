@@ -7,6 +7,17 @@
     <title>Monitores</title>
     <link rel="icon" href="imagens/icon.png">
     <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript">
+      function trocarimg1(){
+        document.getElementById("trocar") .src = "imagens/monitores/MONITOR1.jpg" 
+      }
+      function trocarimg2(){
+        document.getElementById("trocar") .src = "imagens/monitores/MONITOR2.jpg" 
+      }
+      function trocarimg3(){
+        document.getElementById("trocar") .src = "imagens/monitores/MONITOR3.jpg" 
+      }
+    </script>
 </head>
 <body>
   <header>
@@ -28,9 +39,9 @@
       <img src="imagens/monitores/MONITOR1.jpg" width="320px" id="trocar">
     
       <ul class="miniaturas">
-        <li>  <img src="imagens/monitores/MONITOR1.jpg" width="350px" class="imagem_miniatura"></li>
-        <li>  <img src="imagens/monitores/MONITOR2.jpg" width="350px" class="imagem_miniatura"></li>
-        <li>  <img src="imagens/monitores/MONITOR3.jpg" width="350px" class="imagem_miniatura"></li>
+        <li>  <img src="imagens/monitores/MONITOR1.jpg" width="350px" class="imagem_miniatura" onclick="trocarimg1()"></li>
+        <li>  <img src="imagens/monitores/MONITOR2.jpg" width="350px" class="imagem_miniatura" onclick="trocarimg2()"></li>
+        <li>  <img src="imagens/monitores/MONITOR3.jpg" width="350px" class="imagem_miniatura" onclick="trocarimg3()"></li>
       </ul>  
       <div class="descricao_detalhes">
         <p class="texto_principal"> Monitor Gamer </p>
